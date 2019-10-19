@@ -1,9 +1,10 @@
-﻿using AgendaApp.Exceptions;
+﻿using AgendaWebApp.Exceptions;
+using AgendaWebApp.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AgendaApp.Model
+namespace AgendaWebApp.Models
 {
     public class Person
     {

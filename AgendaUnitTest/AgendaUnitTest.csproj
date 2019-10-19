@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AgendaApp\AgendaApp.csproj" />
+    <ProjectReference Include="..\AgendaWebApp\AgendaWebApp.csproj" />
   </ItemGroup>
 
 </Project>

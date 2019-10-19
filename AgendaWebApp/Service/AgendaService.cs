@@ -1,11 +1,11 @@
-﻿using AgendaApp.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Collections.Concurrent;
+using AgendaWebApp.Models;
 
-namespace AgendaApp.Service
+namespace AgendaWebApp.Service
 {
     public class AgendaService
     {

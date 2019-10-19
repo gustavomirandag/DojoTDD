@@ -1,6 +1,7 @@
-using AgendaApp.Model;
-using AgendaApp.Service;
-using AgendaApp.Exceptions;
+using AgendaWebApp.Exceptions;
+using AgendaWebApp.Model;
+using AgendaWebApp.Models;
+using AgendaWebApp.Service;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 

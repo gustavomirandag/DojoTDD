@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AgendaApp.Model
+namespace AgendaWebApp.Model
 {
     public class EmptyNameException : Exception
     {

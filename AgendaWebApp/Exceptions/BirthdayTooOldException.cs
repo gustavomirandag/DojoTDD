@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AgendaApp.Exceptions
+namespace AgendaWebApp.Exceptions
 {
     public class BirthdayTooOldException : Exception
     {
