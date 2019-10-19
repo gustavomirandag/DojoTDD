@@ -18,7 +18,7 @@ namespace AgendaUnitTest
             var person = new Person
             {
                 Id = Guid.NewGuid(),
-                Name = "João da Silva",
+                Name = "Joï¿½o da Silva",
                 Birthday = new DateTime(2010, 02, 5, 10, 20, 00)
             };
 
@@ -53,12 +53,27 @@ namespace AgendaUnitTest
             var person = new Person
             {
                 Id = Guid.NewGuid(),
-                Name = "João",
+                Name = "Joï¿½o",
                 Birthday = new DateTime(1700, 02, 15, 10, 20, 00)
             };
 
             //Assert Action
             Assert.ThrowsException<BirthdayTooOldException>(() => agendaService.AddPerson(person));
+        }
+
+        [TestMethod]
+        public void CreatePersonWithStringInBirthdayTest()
+        {
+            //Prepare
+            var agendaService = new AgendaService();
+            var person = new Person{
+                Id = Guid.NewGuid(),
+                Name = "JosÃ©",
+                Birthday = "1990-01-01"
+            };
+
+            //Assert Action
+            // Assert.ThrowsException<BirthdayStringException>(() => agendaService.AddPerson(person))
         }
     }
 }
