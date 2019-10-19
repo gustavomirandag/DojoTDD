@@ -18,6 +18,8 @@ namespace AgendaWebApp.Models
                 throw new EmptyNameException();
             if (Birthday <= DateTime.Now.AddYears(-150))
                 throw new BirthdayTooOldException();
+            if (String.IsValid(Birthday))
+                throw new BirthdayStringException();
 
             return true;                                  
         }
